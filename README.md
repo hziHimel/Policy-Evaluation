@@ -7,4 +7,8 @@ For better understading, I suggest to go through [lectures by David Silver](http
 
 To evaluate a policy, we will first choose an arbitary value function(we will fill the matrix with zeros). 
 Then using Bellman update equation, we will update each state's value function.
-After significant number of iterations, we can see a good optimal policy
+After significant number of iterations, we can see a good optimal policy.
+
+In policy iteration algorithm, all the states are assigned random policies at first.
+Depending on those policies, we have to calculate value function and have to find maximum value from 4 adjacent states. 
+Then, according to highest value found in previous step, we will update our policy(direction to that state).
